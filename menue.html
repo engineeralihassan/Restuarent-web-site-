@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <title>Royal kitchen menue</title>
+    <style>
+        .top-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: white;
+    color: rgba(251,175,50,255);
+ border-bottom: 1px solid rgba(251,175,50,255) ;
+ 
+
+}
+
+
+.icons{
+    display: flex;
+   
+
+}
+.info{
+    display: flex;
+    font-size: 30px;
+    transition:all  2s linear; 
+  
+}
+.info h5 :hover{
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.info h5{
+    margin-left: 15px;
+}
+.icons .fa{
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgba(141,189,86,255);
+    transition:all  2s linear; 
+    cursor: pointer;
+
+}
+.icons .fa :hover{
+    font-size: 25px;
+}
+.info .fa{
+    color: rgba(141,189,86,255);
+}
+
+
+/* header main menue */
+
+.header {
+
+position: sticky;
+top: 0px;
+/* background:linear-gradient(rgba(33,32,32,0.999)
+,rgba(33,32,32,0.999));
+ */
+
+background: white;
+color:black;
+letter-spacing: 1px;
+
+font: caption;
+font-size: 24px;
+text-transform:capitalize;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+
+
+.menue {
+
+margin-right: 20px;
+padding: 16px 40px;
+margin-bottom: 15px;
+}
+
+.menue a {
+font: menu;
+letter-spacing: 1px;
+font-size: 18px;
+font-weight: bold;
+
+font-family:Sylfaen;
+text-decoration: none;
+
+box-sizing: border-box;
+/* background-color:#FFB703; */
+color:   rgba(251,175,50,255);
+
+margin: 0 10px;
+padding: 10px 10px;
+transition:all  2s ease-in-out ; 
+
+
+
+
+
+}
+.header h1{
+color:   rgba(141,189,86,255);
+font-family:Showcard Gothic;
+margin-left: 20px;
+font-size: 25px;
+}
+#menue{
+transition:all  1s linear ;   
+}
+#menue{
+color: white;
+background-color:  rgba(251,175,50,255);
+
+}
+
+
+.menue a:hover {
+background:rgba(141,189,86,255);
+color: white;
+font-weight: bold;
+}
+
+/* menue sections */
+.menue-material{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.pizza-content{
+    flex-basis: 45%;
+
+}
+.burger-content{
+    flex-basis: 45%;   
+}
+.meat-content{
+    flex-basis: 45%;
+
+}
+.other-content{
+    flex-basis: 45%;   
+}
+
+
+.pizza-boxs{
+    display: flex;
+
+    flex-basis: 40%;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+    border: 1px solis red;
+    height: 120px;
+
+
+}
+.img img{
+    border: 1px solid black;
+    width: 150px;
+    height: 104px;
+    
+}
+.record{
+    display: flex;
+    justify-content: space-between;
+ margin-left: 5px;
+   
+    margin-bottom: 50px;
+}
+.item-info{
+  
+    color: rgb(97, 139, 19);
+    position: relative;
+   bottom: 20px;
+
+
+}
+ .price h2{
+    margin-left: 105px;
+    
+    color: rgba(251,175,50,255);
+    position: relative;
+   bottom: 20px;
+
+}
+.item-name{
+    color: rgba(251,175,50,255);
+    font-size: 20px;
+   position: relative;
+   bottom: 20px;
+
+}
+
+
+ .record button{
+     width: 85px;
+     height: 30px;
+     color: white;
+     background:rgba(141,189,86,255) ;
+     text-align: center;
+     outline: none;
+     font-size: 14px;
+     border-radius: 5px;
+     border: none;
+     margin-bottom: 21px;
+     border: 1px solid white;
+     position: relative;
+   bottom: 20px;
+    transition:all  1s ease-in-out ; 
+
+}
+.record button:hover{
+    
+    background: rgba(251,175,50,255);
+    cursor: pointer;
+}
+.meat-content{
+    margin-top: 60px;
+}
+
+.other-content{
+    margin-top: 60px;
+
+}
+.meat-heading{
+    font-size: 30px;
+    font-family: Cambria;
+    margin-bottom: 20px;
+    padding-bottom: 20px ;
+    color: saddlebrown;
+}
+.burger-heding{
+    font-size: 30px;
+    font-family: Cambria;
+    margin-bottom: 20px;
+    padding-bottom: 20px ;
+    color: saddlebrown;
+
+}
+.others-id{
+    font-size: 30px;
+    font-family: Cambria;
+    margin-bottom: 20px;
+    padding-bottom: 20px ;
+    color: saddlebrown;
+   
+
+}
+.pizza-heading{
+    font-size: 30px;
+    font-family: Cambria;
+    margin-bottom: 20px;
+    padding-bottom: 20px ;
+    color: saddlebrown;
+   
+
+}
+.heading{
+   
+   text-align: center;
+   height: 100px;
+   margin-top: 50px;
+}
+.heading h1{
+ font-size: 40px;
+   color: rgba(251,175,50,255);
+
+}
+/* footer section */
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    border-top: 1px solid rgba(141,189,86,255);
+   
+}
+
+.footer-part2{
+    display: flex;
+    flex-direction: row;
+}
+ .footer h1{
+    color:   rgba(141,189,86,255);
+    font-family:Showcard Gothic;
+   letter-spacing: 1px;
+    font-size: 25px;
+
+}
+.foter-part1{
+    margin: 20px 40px;
+}
+.foter-part1 p{
+    margin-top: 10px;
+    color: rgba(141,189,86,255);
+    font-size: 20px;
+
+
+
+}
+.foter-part1 .fa{
+    font-size: 25px;
+    color:rgba(251,175,50,255);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.footer-part2{
+    margin-right: 50px;
+}
+.footer-part2 h3{
+    color: rgba(251,175,50,255);
+   
+}
+
+   .footer-part2 .Usefull-links{
+       cursor: pointer;
+       margin-right: 200px;
+
+   }
+   .footer-part2 .Usefull-links ul li{
+       list-style: none;
+       text-decoration: none;
+       color: rgba(141,189,86,255);
+       text-align:start;
+       margin-top: 9px;
+
+   }
+   .footer-part2 .Usefull-links ul a{
+       text-decoration: none;
+   }
+
+   .footer-part2 .Usefull-links ul li:hover{
+
+       color: rgba(251,175,50,255);
+
+   } 
+  
+   .footer-part2 .CON{
+       margin-right: 15px;
+
+   }
+   .footer-part2 .CON ul li{
+       list-style: none;
+       text-decoration: none;
+       color: rgba(141,189,86,255);
+       text-align:start;
+       margin-top: 9px;
+
+   }
+   .footer-part2 .CON ul li .fa{
+       color: rgba(251,175,50,255);
+       cursor: pointer;
+   }
+
+   .footer-part2 .CON ul li:hover{
+
+       color: rgba(251,175,50,255);
+   } 
+
+
+    </style>
+</head>
+<body>
+    
+      <!-- top headr section -->
+   <div class="top-header">
+    <div class="logo">
+        <img src="images/22.png" alt="">
+        
+    </div>
+    <div class="info">
+        <h5><i class="fa fa-clock-o"></i>Order Food 24/7</h5>
+        <h5><i class="fa fa-phone"></i>03133324617</h5>
+
+    </div>
+    <div class="icons">
+    <a href="https://www.facebook.com/people/Ali-Hassan/100069310475212/"> <i class="fa fa-facebook"></i> </a>
+    <a href="alihassandurani3"><i class="fa fa-instagram"></i> </a> 
+     <i class="fa fa-twitter"></i>
+     <i class="fa fa-youtube-play"></i>
+     <i class="phone"></i> 
+    </div>
+</div>
+<div class="header">
+ <div class="logo">
+     <h1>royal Kitchen</h1>
+ </div>
+ <div class="menue">
+     <a href="index.html" id="home">Home</a>
+     <a href="about us .html">about us</a>
+     <a href="menue.html" id="menue">Menue</a>
+     <a href="#">Deals</a>
+     <a href="book table.html">Reservation</a>
+     <a href="chefs.html">Chefs</a>
+     <a href="contact us.html" id="contact">Contact us</a>
+
+ </div>
+</div>
+<section class="menue-section">
+    <section id="about-us">
+        <div class="heading">
+            <h1>Discover Our Menue<i class="fa fa-cutlery"></i></h1>
+        </div>
+
+
+        <div class="menue-material">
+
+    
+            <div class="pizza-content">
+                <div class="pizza-heading">
+                    <h1>PIZZA  <i class="fa fa-pizza-slice"></i></h1>
+                </div>
+                <div class="pizza-boxs">
+                    <div class="img">
+                        <img src="images/11.jpg" alt="">
+                    </div>
+                    <div class="record">
+                    <div class="name">
+                        <h3 class="item-name">
+                            Chees Pizza
+                        </h3>
+                        <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+                        <a href="login form.html"><button>Order Now</button></a>
+                    </div>
+                    <div class="price">
+                        <h2 class="item-price">100.5 $</h2>
+                    </div>
+                </div>
+                </div>
+
+
+
+                <div class="pizza-boxs">
+                    <div class="img">
+                        <img src="images/8.jpg" alt="">
+                    </div>
+                    <div class="record">
+                    <div class="name">
+                        <h3 class="item-name">Peproni Pizza</h3>
+                        <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+                        <a href="login form.html"><button>Order Now</button></a>
+                    </div>
+                    <div class="price">
+                        <h2 class="item-price">90.50 $</h2>
+                    </div>
+                </div>
+                </div>
+                <div class="pizza-boxs">
+                    <div class="img">
+                        <img src="images/pizza9.jpg" alt="">
+                    </div>
+                    <div class="record">
+                    <div class="name">
+                        <h3 class="item-name">Vagitarian Pizza</h3>
+                        <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+                        <a href="login form.html"><button>Order Now</button></a>
+                    </div>
+                    <div class="price">
+                        <h2 class="item-price">80.00 $</h2>
+                    </div>
+                </div>
+                </div>
+                <div class="pizza-boxs">
+                    <div class="img">
+                        <img src="images/19.jpg" alt="">
+                    </div>
+                    <div class="record">
+                    <div class="name">
+                        <h3 class="item-name">fajita Pizza</h3>
+                        <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+                        <a href="login form.html"><button>Order Now</button></a>
+                    </div>
+                    <div class="price">
+                        <h2 class="item-price">120 $</h2>
+                    </div>
+                </div>
+                </div>
+
+             
+
+      
+    </div>
+            
+    <div class="burger-content">
+    
+    
+    <div class="burger-heding">
+        <h1>
+            
+            Burgers
+        </h1>
+    </div>
+    <div class="pizza-boxs">
+        <div class="img">
+            <img src="images/burger9.jpg" alt="">
+        </div>
+        <div class="record">
+        <div class="name">
+            <h3 class="item-name">
+                Mutton 
+                burger
+            </h3>
+            <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+            <a href="login form.html"><button>Order Now</button></a>
+        </div>
+        <div class="price">
+            <h2 class="item-price">50.00 $</h2>
+        </div>
+    </div>
+    </div>
+    <div class="pizza-boxs">
+        <div class="img">
+            <img src="images/burger5.jpg" alt="">
+        </div>
+        <div class="record">
+        <div class="name">
+            <h3 class="item-name">Beef Burger</h3>
+            <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+            <a href="login form.html"><button>Order Now</button></a>
+        </div>
+        <div class="price">
+            <h2 class="item-price">40.55 $</h2>
+        </div>
+    </div>
+    </div>
+    <div class="pizza-boxs">
+        <div class="img">
+            <img src="images/burgwer18.jpg" alt="">
+        </div>
+        <div class="record">
+        <div class="name">
+            <h3 class="item-name">Chees Burger </h3>
+            <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+            <a href="login form.html"><button>Order Now</button></a>
+        </div>
+        <div class="price">
+            <h2 class="item-price">45.00 $</h2>
+        </div>
+    </div>
+    </div>
+    <div class="pizza-boxs">
+        <div class="img">
+            <img src="images/buger15.jpg" alt="">
+        </div>
+        <div class="record">
+        <div class="name">
+            <h3 class="item-name">chicken vegitarian</h3>
+            <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+            <a href="login form.html"><button>Order Now</button></a>
+        </div>
+        <div class="price">
+            <h2 class="item-price">25.75 $</h2>
+        </div>
+    </div>
+    </div>
+    
+</div>
+
+    <div class="meat-content">
+    
+    
+    <div class="meat-heading">
+        <h1>
+            
+            Meat Items
+        </h1>
+    </div>
+    <div class="pizza-boxs">
+        <div class="img">
+            <img src="images/charga.jpg" alt="">
+        </div>
+        <div class="record">
+        <div class="name">
+            <h3 class="item-name">
+                chicken Charga
+            </h3>
+            <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+            <a href="login form.html"><button>Order Now</button></a>
+        </div>
+        <div class="price">
+            <h2 class="item-price">17.5 $</h2>
+        </div>
+    </div>
+    </div>
+    <div class="pizza-boxs">
+        <div class="img">
+            <img src="images/chicken2.jpg" alt="">
+        </div>
+        <div class="record">
+        <div class="name">
+            <h3 class="item-name">
+                chicken Pakora
+            </h3>
+            <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+            <a href="login form.html"><button>Order Now</button></a>
+        </div>
+        <div class="price">
+            <h2 class="item-price">120.5 $</h2>
+        </div>
+    </div>
+    </div>
+    <div class="pizza-boxs">
+        <div class="img">
+            <img src="images/beef1.jpg" alt="">
+        </div>
+        <div class="record">
+        <div class="name">
+            <h3 class="item-name">Beef Salan</h3>
+            <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+            <a href="login form.html"><button>Order Now</button></a>
+        </div>
+        <div class="price">
+            <h2 class="item-price">150 $</h2>
+        </div>
+    </div>
+    </div>
+    <div class="pizza-boxs">
+        <div class="img">
+            <img src="imag/images (3).jfif" alt="">
+        </div>
+        <div class="record">
+        <div class="name">
+            <h3 class="item-name">Mutton Karahi</h3>
+            <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+            <a href="login form.html"><button>Order Now</button></a>
+        </div>
+        <div class="price">
+            <h2 class="item-price">200 $</h2>
+        </div>
+    </div>
+    </div>
+    <div class="pizza-boxs">
+        <div class="img">
+            <img src="images/tikkay.jpg" alt="">
+        </div>
+        <div class="record">
+        <div class="name">
+            <h3 class="item-name">
+                chicken Tikka
+            </h3>
+            <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+            <a href="login form.html"><button>Order Now</button></a>
+        </div>
+        <div class="price">
+            <h2 class="item-price">130  $</h2>
+        </div>
+    </div>
+    </div>
+    <div class="pizza-boxs">
+        <div class="img">
+            <img src="images/2.jpg" alt="">
+        </div>
+        <div class="record">
+        <div class="name">
+            <h3 class="item-name">
+                Fish Fry
+            </h3>
+            <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+            <a href="login form.html"><button>Order Now</button></a>
+        </div>
+        <div class="price">
+            <h2 class="item-price">300 $</h2>
+        </div>
+    </div>
+    </div>
+    <div class="pizza-boxs">
+        <div class="img">
+            <img src="imag/download (14).jfif" alt="">
+        </div>
+        <div class="record">
+        <div class="name">
+            <h3 class="item-name">
+                Mutton Tikka
+            </h3>
+            <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+            <a href="login form.html"><button>Order Now</button></a>
+        </div>
+        <div class="price">
+            <h2 class="item-price">250.5 $</h2>
+        </div>
+    </div>
+    </div>
+    <div class="pizza-boxs">
+        <div class="img">
+            <img src="imag/salan.jpg" alt="">
+        </div>
+        <div class="record">
+        <div class="name">
+            <h3 class="item-name">
+                Chicken 
+                Salan
+            </h3>
+            <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+            <a href="login form.html"><button>Order Now</button></a>
+        </div>
+        <div class="price">
+            <h2 class="item-price">150.5 $</h2>
+        </div>
+    </div>
+    </div>
+
+    
+</div>
+
+    <div class="other-content">
+    
+    
+    <div class="others-id">
+        <h1>
+            
+            Other Items
+        </h1>
+        </div>
+        <div class="pizza-boxs">
+            <div class="img">
+                <img src="images/rice2.jfif" alt="">
+            </div>
+            <div class="record">
+            <div class="name">
+                <h3 class="item-name">
+                    vegitable Pulao
+                </h3>
+                <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+                <a href="login form.html"><button>Order Now</button></a>
+            </div>
+            <div class="price">
+                <h2 class="item-price">6.5 $</h2>
+            </div>
+        </div>
+        </div>
+        <div class="pizza-boxs">
+            <div class="img">
+                <img src="images/1biryani.jfif" alt="">
+            </div>
+            <div class="record">
+            <div class="name">
+                <h3 class="item-name">Spicy 
+                    biryani
+                </h3>
+                <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+                <a href="login form.html"><button>Order Now</button></a>
+            </div>
+            <div class="price">
+                <h2 class="item-price">8.0 $</h2>
+            </div>
+        </div>
+        </div>
+        <div class="pizza-boxs">
+            <div class="img">
+                <img src="images/2swaet.jpg" alt="">
+            </div>
+            <div class="record">
+            <div class="name">
+                <h3 class="item-name">Rasian salaj</h3>
+                <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+                <a href="login form.html"><button>Order Now</button></a>
+            </div>
+            <div class="price">
+                <h2 class="item-price">10.5 $</h2>
+            </div>
+        </div>
+        </div>
+        <div class="pizza-boxs">
+            <div class="img">
+                <img src="imag/cake.jpg" alt="">
+            </div>
+            <div class="record">
+            <div class="name">
+                <h3 class="item-name">Cakes</h3>
+                <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+                <a href="login form.html"><button>Order Now</button></a>
+            </div>
+            <div class="price">
+                <h2 class="item-price">30.00 $</h2>
+            </div>
+        </div>
+        </div>
+        <div class="pizza-boxs">
+            <div class="img">
+                <img src="imag/icerem.jpg" alt="">
+            </div>
+            <div class="record">
+            <div class="name">
+                <h3 class="item-name">Ice cream</h3>
+                <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+                <a href="login form.html"><button>Order Now</button></a>
+            </div>
+            <div class="price">
+                <h2 class="item-price">10.5 $</h2>
+            </div>
+        </div>
+        </div>
+        <div class="pizza-boxs">
+            <div class="img">
+                <img src="imag/download (3).jfif" alt="">
+            </div>
+            <div class="record">
+            <div class="name">
+                <h3 class="item-name">shakes</h3>
+                <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+                <a href="login form.html"><button>Order Now</button></a>
+            </div>
+            <div class="price">
+                <h2 class="item-price">3.5 $</h2>
+            </div>
+        </div>
+        </div>
+        <div class="pizza-boxs">
+            <div class="img">
+                <img src="imag/download (7).jfif" alt="">
+            </div>
+            <div class="record">
+            <div class="name">
+                <h3 class="item-name">juices</h3>
+                <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+                <a href="login form.html"><button>Order Now</button></a>
+            </div>
+            <div class="price">
+                <h2 class="item-price">4.5 $</h2>
+            </div>
+        </div>
+        </div>
+        <div class="pizza-boxs">
+            <div class="img">
+                <img src="imag/cool drinks2.jfif" alt="">
+            </div>
+            <div class="record">
+            <div class="name">
+                <h3 class="item-name">Cool Drinks</h3>
+                <p class="item-info" >Lorem ipsum dolor sit amet consectetur</p>
+                <a href="login form.html"><button>Order Now</button></a>
+            </div>
+            <div class="price">
+                <h2 class="item-price">2.5 $</h2>
+            </div>
+        </div>
+        </div>
+
+        
+    </div>
+</div>
+
+
+
+
+
+  
+
+
+
+
+</div>
+
+</section>
+ <!--footer section  -->
+ <section class="footer">
+    <div class="foter-part1">
+    <div class="footer-logo">
+       <h1>Royal Kitchen</h1>
+    </div>
+    <div class="foter-p">
+     <p>   Lorem ipsum dolor sit amet consectetur <br>
+        doloribus modi? Tempora, nemo. Corrupti maxi</p>
+    </div>
+    <div class="footer-icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+</div>
+<div class="footer-part2">
+    <div class="Usefull-links">
+        <h3>Usefull links</h3>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>Menue</li>
+            <li>Reservation</li>
+            <li>
+                Chefs
+            </li>
+            <a href=""><li>Contact us</li></a>
+        </ul>
+    </div>
+    
+
+    <div class="CON">
+        <h3>Take Easy with Location</h3>
+        <ul>
+            <li>
+                <i class="fa fa-map-marker"></i> Wellcome road Renala,Okara
+            </li>
+            <li><i class="fa fa-phone"></i> 03133324617</li>
+            <li><i class="fa fa-paper-plane"></i> alihassandurani3@gmail.com</li>
+           
+        </ul>
+    </div>
+
+</div>
+</section>
+   
+</body>
+</html>

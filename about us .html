@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <title>About royal kitchen</title>
+    <style>
+        
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.top-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: white;
+    color: rgba(251,175,50,255);
+ border-bottom: 1px solid rgba(251,175,50,255) ;
+ 
+
+}
+
+
+.icons{
+    display: flex;
+   
+
+}
+.info{
+    display: flex;
+    font-size: 30px;
+    transition:all  2s linear; 
+  
+}
+.info h5 :hover{
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.info h5{
+    margin-left: 15px;
+}
+.icons .fa{
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgba(141,189,86,255);
+    transition:all  2s linear; 
+    cursor: pointer;
+
+}
+.icons .fa :hover{
+    font-size: 25px;
+}
+.info .fa{
+    color: rgba(141,189,86,255);
+}
+
+.header {
+
+position: sticky;
+top: 0px;
+/* background:linear-gradient(rgba(33,32,32,0.999)
+,rgba(33,32,32,0.999));
+ */
+
+background: white;
+color:black;
+letter-spacing: 1px;
+
+font: caption;
+font-size: 24px;
+text-transform:capitalize;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+
+
+.menue {
+
+margin-right: 20px;
+padding: 16px 40px;
+margin-bottom: 15px;
+}
+
+.menue a {
+font: menu;
+letter-spacing: 1px;
+font-size: 18px;
+font-weight: bold;
+
+font-family:Sylfaen;
+text-decoration: none;
+
+box-sizing: border-box;
+/* background-color:#FFB703; */
+color:   rgba(251,175,50,255);
+
+margin: 0 10px;
+padding: 10px 10px;
+transition:all  1s ease-in-out ; 
+
+
+
+
+
+}
+.header h1{
+color:   rgba(141,189,86,255);
+font-family:Showcard Gothic;
+margin-left: 20px;
+font-size: 25px;
+}
+#home{
+transition:all  1s linear ;   
+}
+#about{
+color: white;
+background-color:  rgba(251,175,50,255);
+
+}
+
+
+.menue a:hover {
+background:rgba(141,189,86,255);
+color: white;
+font-weight: bold;
+}
+.slider {
+    
+    width: 100%;
+    height: 100vh;
+    animation: animate 16s ease-in-out infinite ;
+    background-size: cover;
+    border: 1px solid black;
+    background-image:   linear-gradient(rgba(33,32,32,0.600)
+        ,rgba(33,32,32,0.700)
+        ),url(imag/hero.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-direction: column;
+    
+
+        
+   
+  
+}
+
+.about-us-sections{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    margin-top: 150px;
+}
+.about-us-sections img{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    transition: all 1s ease-out;
+    animation: pic 3s ease-in-out infinite 1s;
+
+}
+@keyframes pic{
+            from{
+                width: 300px;
+                height: 200px;
+            }
+
+            to{
+                width: 350px;
+                height: 250px;
+                box-shadow: 0 5px 5px 0 rgba(251,175,50,255);
+            }
+        }
+
+
+.content{
+    display: flex;
+    align-self: center;
+    margin-top: 100px;
+    color: rgba(251,175,50,255);
+    font-size: 30px;
+
+}
+h2{
+    color:white;
+}
+/* about us section */
+.about-us{
+  width: 100%;
+  margin-top: 100px;
+  
+
+}
+.about-us h1{
+    text-align: center;
+    color: rgba(251,175,50,255);
+}
+.about-material{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+
+
+}
+.heading{
+   
+    text-align: center;
+    height: 100px;
+    margin-top: 50px;
+}
+.heading h1{
+  font-size: 40px;
+    color: rgba(251,175,50,255);
+
+}
+
+.about-image{
+    flex-basis: 45%;
+   
+}
+.about-image img{
+    width: 605px;
+    height: 600px;
+    transition:all  3s ease-in-out ; 
+}
+
+
+.about-content{
+  align-self: flex-start;
+ 
+    flex-basis: 45%;
+    height: 600px;
+}
+.about-content .hed h1{
+    color: rgba(141,189,86,255);
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-content .para p{
+    font-size: 20px;
+    color: rgba(251,175,50,255);
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 25px;
+}
+.about-content .para p span{
+    font-size: 30px;
+    color: rgba(141,189,86,255);
+}
+.about-content .list {
+    margin-left: 35px;
+    margin-top: 30px;
+
+}
+.about-content .list ul{
+    list-style:disc;
+    color: rgba(251,175,50,255);
+}
+.about-content .list ul li{
+    color: rgba(141,189,86,255);
+    margin-top: 20px;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-content .para2 {
+    font-size: 20px;
+    color: rgba(251,175,50,255);
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 25px;
+    margin-right: 30px;
+
+}
+/* footer section */
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    border-top: 1px solid rgba(141,189,86,255);
+   
+}
+
+.footer-part2{
+    display: flex;
+    flex-direction: row;
+}
+ .footer h1{
+    color:   rgba(141,189,86,255);
+    font-family:Showcard Gothic;
+   letter-spacing: 1px;
+    font-size: 25px;
+
+}
+.foter-part1{
+    margin: 20px 40px;
+}
+.foter-part1 p{
+    margin-top: 10px;
+    color: rgba(141,189,86,255);
+    font-size: 20px;
+
+
+
+}
+.foter-part1 .fa{
+    font-size: 25px;
+    color:rgba(251,175,50,255);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.footer-part2{
+    margin-right: 50px;
+}
+.footer-part2 h3{
+    color: rgba(251,175,50,255);
+   
+}
+
+   .footer-part2 .Usefull-links{
+       cursor: pointer;
+       margin-right: 200px;
+
+   }
+   .footer-part2 .Usefull-links ul li{
+       list-style: none;
+       text-decoration: none;
+       color: rgba(141,189,86,255);
+       text-align:start;
+       margin-top: 9px;
+
+   }
+   .footer-part2 .Usefull-links ul a{
+       text-decoration: none;
+   }
+
+   .footer-part2 .Usefull-links ul li:hover{
+
+       color: rgba(251,175,50,255);
+
+   } 
+  
+   .footer-part2 .CON{
+       margin-right: 15px;
+
+   }
+   .footer-part2 .CON ul li{
+       list-style: none;
+       text-decoration: none;
+       color: rgba(141,189,86,255);
+       text-align:start;
+       margin-top: 9px;
+
+   }
+   .footer-part2 .CON ul li .fa{
+       color: rgba(251,175,50,255);
+       cursor: pointer;
+   }
+
+   .footer-part2 .CON ul li:hover{
+
+       color: rgba(251,175,50,255);
+   } 
+
+
+    </style>
+</head>
+<body>
+    <div class="top-header">
+        <div class="logo">
+            <img src="images/22.png" alt="">
+            
+        </div>
+        <div class="info">
+            <h5><i class="fa fa-clock-o"></i>Order Food 24/7</h5>
+            <h5><i class="fa fa-phone"></i>03133324617</h5>
+ 
+        </div>
+        <div class="icons">
+        <a href="https://www.facebook.com/people/Ali-Hassan/100069310475212/"> <i class="fa fa-facebook"></i> </a>
+        <a href="alihassandurani3"><i class="fa fa-instagram"></i> </a> 
+         <i class="fa fa-twitter"></i>
+         <i class="fa fa-youtube-play"></i>
+         <i class="phone"></i> 
+        </div>
+    </div>
+    <div class="header">
+     <div class="logo">
+         <h1>royal Kitchen</h1>
+     </div>
+     <div class="menue">
+         <a href="index.html" id="home">Home</a>
+         <a href="about us .html" id="about">about us</a>
+         <a href="menue.html">Menue</a>
+         <a href="#">Deals</a>
+         <a href="book table.html">Reservation</a>
+         <a href="chefs.html">Chefs</a>
+         <a href="contact us.html">Contact us</a>
+ 
+     </div>
+ </div>
+ <section class="slider">
+        
+
+    <div class="content">
+        
+        <h1>Wellcome to the Royal Kitchen the no 1 Resturent of his type </h1>
+       
+    </div>
+    <div class="about-us-sections">
+        <div class="img">
+            <img src="imag/salan.jpg" alt="">
+            <h2>
+                Qualted Food
+            </h2>
+        </div>
+        <div class="img">
+            <img src="images/man.jpg" alt="">
+            <h2>
+                best 
+                services
+            </h2>
+        </div>
+        <div class="img">
+            <img src="web images/cock.jpg" alt="">
+
+    <h2>World's best chefs</h2>
+        </div>
+    </div>
+   
+
+
+
+    </section>
+    <section id="about-us">
+        <div class="heading">
+            <h1>Why Poeple Choos us <i class="fa fa-user"></i></h1>
+        </div>
+        <div class="about-material">
+
+        
+        <div class="about-content">
+            <div class="hed">
+                <h1>About Us</h1>
+            </div>
+            <div class="para">
+<p><span>"</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat <br>
+    saepe reiciendis ex quia mollitia ipsa molestias aliquid, in adipisci<br>
+     modi veritatis, id dolore. Nam delectus aliquam architecto ea officia<span>"</span> </p>
+    </div>
+    <div class="list">
+        <ul>
+            <li>World's Best chefs</li>
+            <li>  Natural Ingredients</li>
+            <li>Best Quality Products</li>
+            <li>Fastest home delievry</li>
+            <li>fresh Meet& vegitables</li>
+            <li>Well furnished environment</li>
+            <li>Well bieng staff</li>
+        </ul>
+        
+    </div>
+    <p class="para2"><span>"</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat <br>
+        saepe reiciendis ex quia mollitia<span>"</span> </p>
+</div>
+        
+<div class="about-image">
+<img src="images/25.jpg" alt="">
+</div>
+
+</div>
+</section>
+     <!--footer section  -->
+ <section class="footer">
+    <div class="foter-part1">
+    <div class="footer-logo">
+       <h1>Royal Kitchen</h1>
+    </div>
+    <div class="foter-p">
+     <p>   Lorem ipsum dolor sit amet consectetur <br>
+        doloribus modi? Tempora, nemo. Corrupti maxi</p>
+    </div>
+    <div class="footer-icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+</div>
+<div class="footer-part2">
+    <div class="Usefull-links">
+        <h3>Usefull links</h3>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>Menue</li>
+            <li>Reservation</li>
+            <li>
+                Chefs
+            </li>
+            <a href=""><li>Contact us</li></a>
+        </ul>
+    </div>
+    
+
+    <div class="CON">
+        <h3>Take Easy with Location</h3>
+        <ul>
+            <li>
+                <i class="fa fa-map-marker"></i> Wellcome road Renala,Okara
+            </li>
+            <li><i class="fa fa-phone"></i> 03133324617</li>
+            <li><i class="fa fa-paper-plane"></i> alihassandurani3@gmail.com</li>
+           
+        </ul>
+    </div>
+
+</div>
+</section>
+    
+    
+</body>
+</html>

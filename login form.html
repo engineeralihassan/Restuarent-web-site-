@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <title>Order collection form rotyal kitchen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .form {
+            width: 100%;
+            height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+background-image:     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),  url(imag/hero.jpg);
+background-position: center;
+background-size: cover;
+        }
+
+        .items {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+          background-color:white;
+           width: 450px;
+           height: 605px;
+        
+        margin-top: 20px;
+        border-radius: 8px;
+
+           
+
+
+
+        }
+        .inputs{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .icon{
+            width: 100px;
+            height:100px;
+            background-color:rgba(141,189,86,255);
+            color: white;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .icon .fa{
+            font-size: 80px;
+
+            color:rgba(251,175,50,255);
+        }
+        input{
+            width: 400px;
+            height: 50px;
+            margin-top: 15px;
+            color: white;
+           
+            
+            border: 1px solid black;
+            outline: none;
+            background-color: rgba(141,189,86,255);
+        }
+        input:focus{
+            background-color: rgba(251,175,50,255);
+        }
+
+        input::placeholder{
+            color: white;
+            padding-left: 10px;
+        }
+        .icon{
+            
+            position:relative;
+            bottom: 30px;
+        }
+       #item-details{
+            height: 100px;
+           
+        }
+        h3{
+            color: rgba(251,175,50,255);
+            font-size: 30px;
+            /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
+           
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p{
+            color: rgba(141,189,86,255);
+            font-size: 15px;
+            letter-spacing: 1px;
+            line-height: 22px;
+
+        }
+        button{
+    width: 130px;
+    height: 55px;
+    color: white;
+    background:  rgba(251,175,50,255);
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    border: 1px solid white;
+    
+   transition:all  1s ease-in-out ; 
+
+}
+ button:hover{
+   
+   background: rgba(251,175,50,255);
+   cursor: pointer;
+}
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <div class="items">
+            <div class="icon">
+                <i class="fa fa-user"></i>
+
+            </div>
+            <div class="heading">
+                <h3>Book order Online</h3>
+                <p>Wellcome,Plz fill these requirements, and Give us an <br>
+                    online order
+               </p>
+
+            </div>
+
+            <div class="inputs">
+                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="phone" placeholder="Phone">
+                <input type="text" id="Adress" placeholder="Adress">
+                <input type="text" id="item-details" placeholder="Order Detail">
+               <a href="index.html"> <button onclick="conform()">Order Conform</button> </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function conform() {
+            alert("Thanks for Order,You recieve your parsal in next 30 minutes");
+        }
+    </script>
+    <!-- http://alifurniturehouse.epizy.com/ip%20universty/IP%20Universty%20projects.html -->
+</body>
+
+</html>

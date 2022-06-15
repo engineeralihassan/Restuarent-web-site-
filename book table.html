@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <title>reserve a table</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: white;
+    color: rgba(251,175,50,255);
+ border-bottom: 1px solid rgba(251,175,50,255) ;
+ 
+
+}
+
+
+.icons{
+    display: flex;
+   
+
+}
+.info{
+    display: flex;
+    font-size: 30px;
+    transition:all  2s linear; 
+  
+}
+.info h5 :hover{
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.info h5{
+    margin-left: 15px;
+}
+.icons .fa{
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgba(141,189,86,255);
+    transition:all  2s linear; 
+    cursor: pointer;
+
+}
+.icons .fa :hover{
+    font-size: 25px;
+}
+.info .fa{
+    color: rgba(141,189,86,255);
+}
+
+.header {
+
+position: sticky;
+top: 0px;
+/* background:linear-gradient(rgba(33,32,32,0.999)
+,rgba(33,32,32,0.999));
+ */
+
+background: white;
+color:black;
+letter-spacing: 1px;
+
+font: caption;
+font-size: 24px;
+text-transform:capitalize;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+
+
+.menue {
+
+margin-right: 20px;
+padding: 16px 40px;
+margin-bottom: 15px;
+}
+
+.menue a {
+font: menu;
+letter-spacing: 1px;
+font-size: 18px;
+font-weight: bold;
+
+font-family:Sylfaen;
+text-decoration: none;
+
+box-sizing: border-box;
+/* background-color:#FFB703; */
+color:   rgba(251,175,50,255);
+
+margin: 0 10px;
+padding: 10px 10px;
+transition:all  1s ease-in-out ; 
+
+
+
+
+
+}
+.header h1{
+color:   rgba(141,189,86,255);
+font-family:Showcard Gothic;
+margin-left: 20px;
+font-size: 25px;
+}
+#home{
+transition:all  1s linear ;   
+}
+#book{
+color: white;
+background-color:  rgba(251,175,50,255);
+
+}
+
+
+.menue a:hover {
+background:rgba(141,189,86,255);
+color: white;
+font-weight: bold;
+}
+
+.reservation{
+    width: 100%;
+    height: 110vh;
+    background-image:   linear-gradient(rgba(33,32,32,0.700)
+        ,rgba(33,32,32,0.700)
+        ),url(images/man.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.reserve-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 800px;
+    height: 480px;
+    margin-top: 5px;
+
+
+
+}
+.first{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.second{
+    display: flex;
+}
+.reserve-form input{
+    width: 350px;
+    height: 50px;
+    margin-top: 50px;
+    margin: 15px;
+    background-color: rgba(141,189,86,255);
+    color: white;
+    outline: none;
+    border: none;
+    font: 30px;
+
+    
+}
+.reserve-form input:focus{
+   
+    background-color: rgba(251,175,50,255);
+    color: white;
+   
+
+    
+}
+
+.reserve-form .message{
+    width: 730px;
+    height: 150px;
+}
+
+.reserve-form button{
+    width: 150px;
+    height: 55px;
+    color: white;
+    background:rgba(141,189,86,255) ;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    border: 1px solid white;
+    
+   transition:all  1s ease-in-out ; 
+
+}
+.reserve-form button:hover{
+   
+   background: rgba(251,175,50,255);
+   cursor: pointer;
+}
+.reservation h1{
+    color: rgba(251,175,50,255);
+    font-size: 40px;
+    margin-top: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    margin-bottom: 30px;
+}
+.reservation p{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+
+/* footer section */
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    border-top: 1px solid rgba(141,189,86,255);
+   
+}
+
+.footer-part2{
+    display: flex;
+    flex-direction: row;
+}
+ .footer h1{
+    color:   rgba(141,189,86,255);
+    font-family:Showcard Gothic;
+   letter-spacing: 1px;
+    font-size: 25px;
+
+}
+.foter-part1{
+    margin: 20px 40px;
+}
+.foter-part1 p{
+    margin-top: 10px;
+    color: rgba(141,189,86,255);
+    font-size: 20px;
+
+
+
+}
+.foter-part1 .fa{
+    font-size: 25px;
+    color:rgba(251,175,50,255);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.footer-part2{
+    margin-right: 50px;
+}
+.footer-part2 h3{
+    color: rgba(251,175,50,255);
+   
+}
+
+   .footer-part2 .Usefull-links{
+       margin-right: 200px;
+
+   }
+   .footer-part2 .Usefull-links ul li{
+       list-style: none;
+       text-decoration: none;
+       color: rgba(141,189,86,255);
+       text-align:start;
+       margin-top: 9px;
+
+   }
+   .footer-part2 .Usefull-links ul a{
+       text-decoration: none;
+   }
+
+   .footer-part2 .Usefull-links ul li:hover{
+
+       color: rgba(251,175,50,255);
+
+   } 
+  
+   .footer-part2 .CON{
+       margin-right: 15px;
+
+   }
+   .footer-part2 .CON ul li{
+       list-style: none;
+       text-decoration: none;
+       color: rgba(141,189,86,255);
+       text-align:start;
+       margin-top: 9px;
+
+   }
+   .footer-part2 .CON ul li .fa{
+       color: rgba(251,175,50,255);
+       cursor: pointer;
+   }
+
+   .footer-part2 .CON ul li:hover{
+
+       color: rgba(251,175,50,255);
+   } 
+   input::placeholder{
+       color: white;
+       padding-left: 5px;
+   }
+
+    </style>
+</head>
+<body>
+    <div class="top-header">
+        <div class="logo">
+            <img src="images/22.png" alt="">
+            
+        </div>
+        <div class="info">
+            <h5><i class="fa fa-clock-o"></i>Order Food 24/7</h5>
+            <h5><i class="fa fa-phone"></i>03133324617</h5>
+ 
+        </div>
+        <div class="icons">
+         <i class="fa fa-facebook"></i>
+         <i class="fa fa-instagram"></i>
+         <i class="fa fa-twitter"></i>
+         <i class="fa fa-youtube-play"></i>
+         <i class="phone"></i> 
+        </div>
+    </div>
+    <div class="header">
+     <div class="logo">
+         <h1>royal Kitchen</h1>
+     </div>
+     <div class="menue">
+         <a href="index.html" id="home">Home</a>
+         <a href="about us .html">about us</a>
+         <a href="menue.html">Menue</a>
+         <a href="#">Deals</a>
+         <a href="book table.html"  id="book">Reservation</a>
+         <a href="chefs.html">Chefs</a>
+         <a href="contact us.html">Contact us</a>
+ 
+     </div>
+ </div>
+ <section class="reservation">
+    <h1>Reserve a table</h1>
+    <p>"Reserve one or more table for your upcoming event online.
+        becuasse for this facility you dont wast <br>
+        your time to go in a resturent and book table for event" </p>
+    <div class="reserve-form">
+        <div class="first">
+    <input type="text" class="name" placeholder="Name">
+    <input   type="text" class="phone" placeholder="Phone"  >
+        </div>
+        <div class="second">
+            
+    <input type="text" class="time " placeholder="Date">
+    <input type="text" class="date" placeholder="time">
+    
+        </div>
+        <div class="third">
+            
+    <input type="text" class="message" placeholder="Message">
+    
+        </div>
+        <button id="send" onclick="input_Data()">Send</button>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        </section>
+         <!--footer section  -->
+ <section class="footer">
+    <div class="foter-part1">
+    <div class="footer-logo">
+       <h1>Royal Kitchen</h1>
+    </div>
+    <div class="foter-p">
+     <p>   Lorem ipsum dolor sit amet consectetur <br>
+        doloribus modi? Tempora, nemo. Corrupti maxi</p>
+    </div>
+    <div class="footer-icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+</div>
+<div class="footer-part2">
+    <div class="Usefull-links">
+        <h3>Usefull links</h3>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>Menue</li>
+            <li>Reservation</li>
+            <li>
+                Chefs
+            </li>
+            <a href=""><li>Contact us</li></a>
+        </ul>
+    </div>
+    
+
+    <div class="CON">
+        <h3>Take Easy with Location</h3>
+        <ul>
+            <li>
+                <i class="fa fa-map-marker"></i> Wellcome road Renala,Okara
+            </li>
+            <li><i class="fa fa-phone"></i> 03133324617</li>
+            <li><i class="fa fa-paper-plane"></i> alihassandurani3@gmail.com</li>
+           
+        </ul>
+    </div>
+
+</div>
+
+</section>
+
+
+<script>
+    function input_Data(){
+
+               
+        alert("your table is Reserved,thanks");
+                
+    }
+</script>
+
+    
+</body>
+</html>
